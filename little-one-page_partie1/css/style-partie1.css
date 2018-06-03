@@ -204,6 +204,19 @@ textarea
    border: 1px solid #c3c3c3;
  }
 
+#bouton
+{
+    width:150px;
+    height:40px;
+    background: rgba(70, 159, 208, 1);
+    border-radius: 50px;
+    margin-left: 145px;
+    margin-top: 30px;
+    color: white;
+    font-size: 16px;
+  }
+
+
 /* pied de page*/
 footer {
   background: rgba(70, 159, 208, 1);
