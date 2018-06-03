@@ -75,6 +75,7 @@ li:nth-child(odd)
 }
 
 /* mise en page des sections*/
+
 .page
 {
   width: 980px;
@@ -120,7 +121,8 @@ i
   justify-content: space-between;
 }
 
-figure img{
+figure img
+{
   width:150px;
   height:150px;
 }
@@ -128,6 +130,11 @@ figure img{
 figcaption span
 {
   font-size:18px;
+}
+
+img:hover
+{
+  border-radius: 50%;
 }
  /*carte*/
 .carte {
