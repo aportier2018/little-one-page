@@ -1,0 +1,223 @@
+@import url(reset.css);
+/*@font-face {
+    font-family: "Trebuchet MS";
+    src: url(TrebuchetMS.ttf);
+}*/
+
+body
+{
+  font-family:"Trebuchet MS",serif;
+  /*font-size: 10px;*/
+  height:100%;
+}
+/* header avec texte*/
+header
+{
+  height:360px;
+  background: url("../img/Quatre_fils_Aymon.jpg") no-repeat;
+  box-shadow: 5px 5px 4px rgba(48, 126, 142, 0.73);
+  text-align: center;
+  position: relative;
+}
+
+h1
+{
+  font-size: 60px;
+  padding-top: 52px;
+}
+
+h2
+{
+  font-size: 36px;
+}
+
+/*barre de navigation*/
+nav
+{
+  height:60px;
+  background: rgba(48, 126, 142, 0.73);
+  position: absolute;
+  bottom: 0;
+  width:100%;
+}
+
+ul
+{
+  display:flex;
+  justify-content: center;
+  height: 60px;
+}
+
+li
+{
+  width: 130px;
+  font-size: 22px;
+  padding: 15px;
+  color:white;
+}
+
+li:hover
+{
+  background: #258fe8;
+  margin:0;
+}
+
+a
+{
+  text-decoration: none;
+  color:white;
+}
+
+li:nth-child(odd)
+{
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+/* mise en page des sections*/
+.page
+{
+  width: 980px;
+  margin: auto;
+}
+
+#paragraphe1, #paragraphe2, #paragraphe3
+{
+    margin-top: 50px;
+}
+
+.st
+{
+ font-size:36px;
+ padding-top: 15px
+}
+
+i
+{
+  width : 50px;
+  height: 50px;
+  float: none;
+  background: rgba(70, 159, 208,1);
+}
+
+.texte
+{
+  margin-top:40px;
+}
+
+.image
+{
+  margin-top: 40px;
+  padding-bottom: 0;
+}
+
+ /* images du premier paragraphe*/
+.image div
+{
+  height : 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+figure img{
+  width:150px;
+  height:150px;
+}
+
+figcaption span
+{
+  font-size:18px;
+}
+ /*carte*/
+.carte {
+  margin-top:40px;
+}
+
+/* mise en page du troisième paragraphe*/
+#formulaire
+{
+  display:flex;
+  margin-top: 20px;
+}
+
+#formulaire img
+{
+  width:480px;
+  height:380px;
+  margin-right: 40px;
+}
+
+fieldset
+ {
+   width: 460px;
+   height:40px;
+   border: 1px solid #c3c3c3;
+   border-radius: 2px;
+   color:#c3c3c3;
+   padding-top:20px;
+   margin-bottom: 15px;
+
+ }
+ input
+ {
+   border:none;
+   color:#c3c3c3
+ }
+
+fieldset i
+ {
+    width : 70px;
+    height:100%;
+    text-align: center;
+    background: none;
+ }
+
+.commentaire
+{
+  position: relative;
+  height : 160px;
+}
+
+.commentaire i
+{
+  position:absolute;
+  padding-left: 30px;
+  padding-top:20px;
+  color:#c3c3c3;
+  background: none;
+  width:100%;
+}
+
+i span
+{
+  color:#c3c3c3;
+  font-family: "Trebuchet MS";
+  font-size: 14px;
+  padding-left: 30px;
+}
+
+textarea
+ {
+   width:98.5%;
+   height:97%;
+   border: 1px solid #c3c3c3;
+ }
+
+/* pied de page*/
+footer {
+  background: rgba(70, 159, 208, 1);
+  height:160px;
+  margin-top:50px;
+}
+
+.pictos{
+  text-align: center;
+  padding-top: 50px;
+}
+
+p i
+{
+  width:65px;
+  margin-right:20px;
+}
