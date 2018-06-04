@@ -1,16 +1,16 @@
 @import url(reset.css);
-/*@font-face {
-    font-family: "Trebuchet MS";
-    src: url(TrebuchetMS.ttf);
-}*/
 
-body
+body,html
 {
-  font-family:"Trebuchet MS",serif;
-  /*font-size: 10px;*/
+  font-family:"Trebuchet MS", serif;
+  font-size: 62.5%;
   height:100%;
 }
-/* header avec texte*/
+
+
+/*
+------header avec texte-------
+*/
 header
 {
   height:360px;
@@ -22,13 +22,15 @@ header
 
 h1
 {
-  font-size: 60px;
+  font-size: 6rem;
   padding-top: 52px;
+  font-weight: normal;
 }
 
 h2
 {
-  font-size: 36px;
+  font-size: 3.6rem;
+  font-weight: normal;
 }
 
 /*barre de navigation*/
@@ -51,7 +53,7 @@ ul
 li
 {
   width: 130px;
-  font-size: 22px;
+  font-size: 2.2rem;
   padding: 15px;
   color:white;
 }
@@ -86,9 +88,14 @@ li:nth-child(odd)
     margin-top: 50px;
 }
 
+.texte
+{
+  font-size: 1.6rem;
+}
+
 .st
 {
- font-size:36px;
+ font-size:3.6rem;
  padding-top: 15px
 }
 
@@ -96,8 +103,11 @@ i
 {
   width : 50px;
   height: 50px;
-  float: none;
   background: rgba(70, 159, 208,1);
+}
+
+i::before{
+  font-size: 5rem;
 }
 
 .texte
@@ -127,7 +137,7 @@ figure img{
 
 figcaption span
 {
-  font-size:18px;
+  font-size:1.8rem;
 }
  /*carte*/
 .carte {
@@ -173,6 +183,12 @@ fieldset i
     background: none;
  }
 
+ fieldset i::before
+ {
+   font-size: 2.5rem;
+ }
+
+
 .commentaire
 {
   position: relative;
@@ -189,18 +205,22 @@ fieldset i
   width:100%;
 }
 
+.commentaire i::before{
+  font-size: 2.5rem;
+}
+
 i span
 {
   color:#c3c3c3;
   font-family: "Trebuchet MS";
-  font-size: 14px;
-  padding-left: 30px;
+  font-size: 1.6rem;
+  padding-left: 17px;
 }
 
 textarea
  {
-   width:98.5%;
-   height:97%;
+   width:99.5%;
+   height:92%;
    border: 1px solid #c3c3c3;
  }
 
@@ -213,7 +233,7 @@ textarea
     margin-left: 145px;
     margin-top: 30px;
     color: white;
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
 
