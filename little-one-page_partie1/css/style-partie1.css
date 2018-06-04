@@ -135,6 +135,11 @@ figure img{
   height:150px;
 }
 
+figcaption
+{
+  font-size: 1.4rem;
+}
+
 figcaption span
 {
   font-size:1.8rem;
@@ -158,70 +163,71 @@ figcaption span
   margin-right: 40px;
 }
 
-fieldset
+form div
  {
    width: 460px;
-   height:40px;
+   height:60px;
    border: 1px solid #c3c3c3;
    border-radius: 2px;
-   color:#c3c3c3;
-   padding-top:20px;
    margin-bottom: 15px;
 
  }
- input
+
+ form i
  {
-   border:none;
-   color:#c3c3c3
+   position:absolute;
+   color:#c3c3c3;
+   background: none;
+   width:100%;
+   margin-top: 10px;
+   margin-left: 25px;
  }
 
-fieldset i
- {
-    width : 70px;
-    height:100%;
-    text-align: center;
-    background: none;
- }
-
- fieldset i::before
- {
+ form i::before{
    font-size: 2.5rem;
  }
 
+ i span
+ {
+   color:#c3c3c3;
+   font-family: "Trebuchet MS";
+   font-size: 1.6rem;
+   padding-left: 17px;
+ }
 
-.commentaire
-{
-  position: relative;
-  height : 160px;
-}
+ input
+ {
+   border:none;
+   margin-left: 55px;
+   margin-top: 15px;
+ }
 
+ .commentaire
+ {
+   position: relative;
+   height : 160px;
+   border:none;
+ }
 .commentaire i
-{
-  position:absolute;
-  padding-left: 30px;
-  padding-top:20px;
-  color:#c3c3c3;
-  background: none;
-  width:100%;
-}
+ {
+    width : 70px;
+    height:100%;
+    background: none;
+ }
 
-.commentaire i::before{
-  font-size: 2.5rem;
-}
-
-i span
-{
-  color:#c3c3c3;
-  font-family: "Trebuchet MS";
-  font-size: 1.6rem;
-  padding-left: 17px;
-}
+ .commentaire i::before
+ {
+   font-size: 2.5rem;
+   margin-left: -2px;
+ }
 
 textarea
  {
-   width:99.5%;
-   height:92%;
+   width:87.5%;
+   height:84%;
    border: 1px solid #c3c3c3;
+   padding-left: 58px;
+   padding-top: 13px;
  }
 
 #bouton
