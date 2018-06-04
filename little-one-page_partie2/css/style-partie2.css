@@ -33,6 +33,20 @@ h2
   font-weight: normal;
 }
 
+h1, h2 {
+    color: black;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+
+@keyframes example {
+    from {margin-left: 370px;color: blue;}
+    to { margin-right: 370px;color: green;}
+}
+
 /*barre de navigation*/
 nav
 {
@@ -135,6 +149,11 @@ figure img{
   height:150px;
 }
 
+ img:hover
+{
+  border-radius:50%;
+}
+
 figcaption
 {
   font-size: 1.4rem;
@@ -173,6 +192,13 @@ form div
 
  }
 
+ input
+ {
+   border:none;
+   margin-left: 55px;
+   margin-top: 15px;
+ }
+
  form i
  {
    position:absolute;
@@ -195,19 +221,12 @@ form div
    padding-left: 17px;
  }
 
- input
- {
-   border:none;
-   margin-left: 55px;
-   margin-top: 15px;
- }
-
  .commentaire
  {
-   position: relative;
    height : 160px;
    border:none;
  }
+
 .commentaire i
  {
     width : 70px;
