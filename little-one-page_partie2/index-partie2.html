@@ -12,13 +12,36 @@
   <body>
 
     <header>
-      <h1>TITLE</h1>
-      <h2>Baseline</h2>
+
+      <h1>LITTLE ONE PAGE</h1>
+      <div class="titre">
+        <img class="mySlides w3-animate-fading" src="img/chien.jpg" style="height:360px width:100%;" >
+        <img class="mySlides w3-animate-fading" src="img/chien2.jpg" style="height:360px width:100%;" >
+        <img class="mySlides w3-animate-fading" src="img/Quatre_fils_Aymon.jpg" style="height:360px width:100%;">
+      </div>
+
+      <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 1000);
+}
+</script>
+
       <nav>
         <ul>
-          <li><a href="#paragraphe1">Sous-titre 1</a></li>
-          <li><a href="#paragraphe2">Sous-titre 2</a></li>
-          <li><a href="#paragraphe3">Sous-titre 3</a></li>
+          <a href="#paragraphe1"><li>Sous-titre 1</li></a>
+          <a href="#paragraphe2"><li>Sous-titre 2</li></a>
+          <a href="#paragraphe3"><li>Sous-titre 3</li></a>
         </ul>
       </nav>
     </header>
@@ -26,7 +49,7 @@
     <main>
       <div class="page">
         <section id="paragraphe1">
-          <i class="fa fa-paw fa-5x fa-pull-left fa-border"></i><p class ="st">Sous-titre 1</p>
+          <i class="fa fa-paw fa-5x fa-pull-left fa-border"></i><h3 class ="st">Sous-titre 1</h3>
           <p class = "texte">Lorem ipsum dolor sit amet, laudem mnesarchum ex vim, cetero officiis indoctum ne qui. Mei ad audiam debitis, pri ex quas sadipscing. Id dicant disputando efficiantur cum. At ubique suscipiantur consequuntur his, quot mundi splendide duo no, per ridens scaevola at.
           </p>
         </section>
@@ -85,7 +108,7 @@
         </section>
 
         <section id="paragraphe2">
-          <i class="fa fa-paw fa-3x fa-pull-left fa-border"></i><p class ="st">Sous-titre 2</p>
+          <i class="fa fa-paw fa-3x fa-pull-left fa-border"></i><h3 class ="st">Sous-titre 2</h3>
           <p class = "texte">Lorem ipsum dolor sit amet, laudem mnesarchum ex vim, cetero officiis indoctum ne qui. Mei ad audiam debitis, pri ex quas sadipscing. Id dicant disputando efficiantur cum. At ubique suscipiantur consequuntur his, quot mundi splendide duo no, per ridens scaevola at.</p>
         </section>
       </div>
@@ -96,7 +119,7 @@
 
       <div class ="page">
         <section id="paragraphe3">
-          <i class="fa fa-paw fa-3x fa-pull-left fa-border"></i><p class ="st">Sous-titre 3</p>
+          <i class="fa fa-paw fa-3x fa-pull-left fa-border"></i><h3 class ="st">Sous-titre 3</h3>
           <p class = "texte">Lorem ipsum dolor sit amet, laudem mnesarchum ex vim, cetero officiis indoctum ne qui. Mei ad audiam debitis, pri ex quas sadipscing. Id dicant disputando efficiantur cum. At ubique suscipiantur consequuntur his, quot mundi splendide duo no, per ridens scaevola at.</p>
         </section>
         <section id= "formulaire">
@@ -109,7 +132,7 @@
             </div>
             <div>
               <i class="fa fa-envelope-o"></i>
-              <input type="email" name="mail" placeholder ="Eg. example@email.com">
+              <input type="email" name="mail" placeholder = "Eg. example@email.com">
             </div>
             <div>
               <i class="fa fa-tablet"></i>
@@ -117,7 +140,6 @@
             </div>
             <div class="commentaire">
               <i class="fa fa-comment-o">
-              <!--<span>Your comments...</span>-->
               </i>
               <textarea name="comment" placeholder="Your comments..."></textarea>
             </div>

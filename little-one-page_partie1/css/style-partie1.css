@@ -27,7 +27,7 @@ h1
   font-weight: normal;
 }
 
-h2
+h2,h3
 {
   font-size: 3.6rem;
   font-weight: normal;
@@ -70,7 +70,7 @@ a
   color:white;
 }
 
-li:nth-child(odd)
+a:nth-child(odd)
 {
   border-left: 2px solid white;
   border-right: 2px solid white;
@@ -178,21 +178,13 @@ form div
    position:absolute;
    color:#c3c3c3;
    background: none;
-   width:100%;
+   width:50px;
    margin-top: 10px;
    margin-left: 25px;
  }
 
  form i::before{
    font-size: 2.5rem;
- }
-
- i span
- {
-   color:#c3c3c3;
-   font-family: "Trebuchet MS";
-   font-size: 1.6rem;
-   padding-left: 17px;
  }
 
  input
@@ -228,6 +220,8 @@ textarea
    border: 1px solid #c3c3c3;
    padding-left: 58px;
    padding-top: 13px;
+   font-family: "Trebuchet MS";
+   font-size: 1.5rem;
  }
 
 #bouton
@@ -240,6 +234,7 @@ textarea
     margin-top: 30px;
     color: white;
     font-size: 1.6rem;
+    box-shadow:  2px 5px 10px #092081;
   }
 
 
