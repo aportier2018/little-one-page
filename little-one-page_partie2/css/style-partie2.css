@@ -14,25 +14,30 @@ body,html
 header
 {
   height:360px;
-  background: url("../img/Quatre_fils_Aymon.jpg") no-repeat;
   box-shadow: 5px 5px 4px rgba(48, 126, 142, 0.73);
   text-align: center;
   position: relative;
+  background-color: rgba(48, 126, 142, 0.5);
 }
+
+.basdepage {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 
 header h1{
   position: absolute;
   z-index: 10;
-}
-header div{
-position: absolute;
 }
 
 h1
 {
   font-size: 6rem;
   font-weight: normal;
-  margin-left: 150px;
+  margin-left: 40%;
+  margin-top: 5%;
 }
 
 h2,h3
@@ -42,24 +47,42 @@ h2,h3
 }
 
 h1, h2 {
-    color: black;
-    animation-name: example;
+    animation-name: titre;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-delay: 2s;
     animation-fill-mode: both;
 }
 
-@keyframes example {
-    from {margin-right: 370px;color: green;}
-    to {  margin-left: 370px;color: blue;}
+@keyframes titre {
+    from {margin-left: 370px;color: white;}
+    to {  margin-right: 370px;color: white;}
 }
 
+.diaporama{
+  width:100%;
+  height:360px;
+  margin:0 20%;
+  background: url("../img/Quatre_fils_Aymon.jpg") no-repeat;
+
+
+  animation-name: diapo;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes diapo {
+  0%{background-image: url("../img/Quatre_fils_Aymon.jpg");}
+  33%{background-image: url("../img/Pano-lacAnnecy.jpg")}
+  66%{background-image: url("../img/Quatre_fils_Aymon.jpg");}
+}
 /*barre de navigation*/
 nav
 {
   height:60px;
-  background: rgba(48, 126, 142, 0.73);
+  background: rgba(48, 126, 142, 0.8);
   position: absolute;
   bottom: 0;
   width:100%;
@@ -248,7 +271,7 @@ textarea
    padding-left: 58px;
    padding-top: 13px;
    font-family: "Trebuchet MS";
-   font-size: 1.5rem;
+   font-size: 1.3rem;
  }
 
 #bouton
