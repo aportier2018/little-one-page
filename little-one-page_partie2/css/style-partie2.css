@@ -122,6 +122,7 @@ a:nth-child(odd)
 }
 
 /* mise en page des sections*/
+
 .page
 {
   width: 980px;
@@ -292,7 +293,10 @@ textarea
 footer {
   background: rgba(70, 159, 208, 1);
   height:160px;
+  width:100%;
   margin-top:50px;
+  position:absolute;
+  bottom:0;
 }
 
 .pictos{

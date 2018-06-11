@@ -16,15 +16,15 @@
             $comment = htmlentities($_POST['mail'], ENT_QUOTES);
           }
 
-echo "<h1>Votre formulaire:</h1>";
-echo $name;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $tel;
-echo "<br>";
-echo $comment;
+          echo "<h1>Votre formulaire:</h1>";
+          echo $name;
+          echo "<br>";
+          echo $email;
+          echo "<br>";
+          echo $tel;
+          echo "<br>";
+          echo $comment;
 
-?>
+          ?>
   </body>
 </html>
